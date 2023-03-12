@@ -10,7 +10,7 @@ int main()
 	{
 	case 1:cout << "Spring" << endl; break;
 	case 2:cout << "Summer" << endl; break;
-	case 3:cout << "Autumn" << endl; break;
+	case 3:cout << "fall" << endl; break;
 	default:cout << "Winter" << endl;
 	}
 	system("pause");
