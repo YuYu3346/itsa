@@ -1,35 +1,27 @@
-﻿#include<iostream>
+﻿#include <iostream>  
 using namespace std;
 
 int main()
 {
-    int n;
-    int i;
-    int counter;
-
-    while (cin >> n)
+    int n, a, ans;
+    cin >> n;
+    ans = 1;
+    a = 2;
+    while (a < n)
     {
-        counter = 0;
-
-        i = 1;
-        while (i <= n)
+        if (n % a == 0)
         {
-            if (n % i == 0)
-            {
-                counter = counter + 1;
-            }
-            i = i + 1;
+            ans = 0;
         }
-
-        if (counter == 2)
-        {
-            cout << "yes" << endl;
-        }
-        else
-        {
-            cout << "no" << endl;
-        }
+        a++;
     }
-
+    if (ans == 1)
+    {
+        cout << "YES" << endl;
+    }
+    else
+    {
+        cout << "NO" << endl;
+    }
     return 0;
 }
